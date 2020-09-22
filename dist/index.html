@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <title>weather search engine</title>
+</head>
+<body onload="show5cities()">
+
+<div class="container-fluid">
+    <div class="row justify-lg-content-center" id="rowTitle">
+        <div class="col-8 d-flex bg-primary text-light justify-content-center">
+            <h1>geolocation weather</h1>
+            
+            </div>
+            <div class="col d-flex bg-primary text-light justify-content-center"><h2 id="myWheather">my wheather</h2><img id="myIconWeather" alt="my geolocation weather" ></div>
+        
+    </div>
+    <div class="row justify-lg-content-center">
+        <div class="col"><h1>Barcelona</h1><img id="icon0" alt="barcelona weather" height="100" width="100"></div>
+        <div class="col"><h1>New York</h1><img id="icon1" alt="New York weather"  height="100" width="100"></div>
+        <div class="col"><h1>Salerno</h1><img id="icon2" alt="Salerno weather" height="100" width="100"></div>
+        <div class="col"><h1>Tokyo</h1><img id="icon3" alt="Tokyo weather" height="100" width="100"></div>
+        <div class="col"><h1>Sydney</h1><img id="icon4" alt="Sydney weather" height="100" width="100"></div>
+    </div>
+
+
+
+    <div class="row justify-content-center bg-primary">
+        <div class="col-6 justify-content-center align-items-center">
+
+        <!--    here the script     -->
+        
+        
+
+        
+            <form name="myForm">
+                <div class="form-group">
+                <label for=""><h1>search weather</h1></label><br>
+                <input type="text" id="city"  class="form-control form-control-lg" placeholder="Enter a city name and click search" required>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="displayWeather()" class="btn btn-secondary btn-lg btn-block"><h1>search</h1></button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-lg-content-center  bg-light">
+        <div class="col-12 d-flex bg-light text-primary justify-content-center">
+            <h1>weather searched</h1>
+        </div>    
+            <div class="col-12 d-flex bg-dark text-primary justify-content-center">
+                <h1 id="weather">City weather: </h1>
+            </div>
+            <div class="col-12 d-flex bg-dark text-primary justify-content-center">
+
+                <h1 id="tempMin">Temperature min: </h1>
+
+            </div>
+            <div class="col-12 d-flex bg-dark text-primary justify-content-center">
+
+                <h1 id="tempMax">Temperature max: </h1>
+            </div>
+            <div class="col-12 d-flex bg-dark text-primary justify-content-center">
+
+                <h1 id="humidity">Humidity: </h1>
+            </div>
+        
+    </div>
+
+</div>
+
+<script src="bundle.js"></script></body>
+</html>
