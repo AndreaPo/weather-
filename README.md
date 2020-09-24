@@ -11,4 +11,4 @@ This weather app show your geolocation weather and allow you to search a city we
 
 How to Use
 
-To use this app just download the src folder and change the variables called "yourApiKey" in the file "src/app.js" using your API KEY by the site https://openweathermap.org.
+To use this app just download the src folder and change the variables called "yourApiKey" in the file "src/app.js" using your openweathermap.org API KEY.
